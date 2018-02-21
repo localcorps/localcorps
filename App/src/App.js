@@ -137,7 +137,7 @@ class App extends Component {
                 <h2>Contact</h2>
               </div>
               <div className="col-lg-12">
-                <p>For more information about Local Corps please send an email to <a href="mailto:teamLocalCorps@gmail.com">teamLocalCorps@gmail.com</a></p>
+                <p>For more information about Local Corps please send an email to <a href="mailto:localcorps@gmail.com">localcorps@gmail.com</a></p>
               </div>
             </div>
           </div>
