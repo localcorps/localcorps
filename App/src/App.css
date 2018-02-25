@@ -83,7 +83,8 @@ p {
   color: #2C3E50;
   margin-top: 5.5%;
 }
-    .overlay {
+    /*not sure why this was added in but it interfers with the original placement of the sign in button */
+   /* .overlay {
       position: absolute;
       top:0;
       left:0;
@@ -91,7 +92,7 @@ p {
       height:100%;
       display: block;
       background-color: rgba(0,0,0,0.1);
-    }
+    } */
 
     .App-intro {
       font-size: 1.5em;
