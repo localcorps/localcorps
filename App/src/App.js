@@ -2,6 +2,12 @@ import React, { Component } from 'react';
 import logo from './img/badgelogo4.png';
 import './App.css';
 
+{/* import our components */}
+
+
+import SignIn from './SignIn.js'; //eslint-disable-line import/first
+import SignUp from './SignUp.js'; //eslint-disable-line import/first
+
 class App extends Component {
   render() {
     return (
@@ -10,94 +16,29 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Local Corps</h1>
           <ul>
-            {/* <li><a href="#" data-toggle="modal" data-target="#signinModal">Sign In</a></li> */}
+            <li><a href="#" data-toggle="modal" data-target="#signinModal">Sign In</a></li> 
             <li><a href="#contact">Contact</a></li>
-            {/* <li><a href="#about">About</a></li> */}
-            {/* <li><a href="#home">Home</a></li> */} 
+            <li><a href="#about">About</a></li>
+            <li><a href="#home">Home</a></li>
           </ul>
         </nav>
         
         <header className="App-header">
 
-          
-            {/* <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signupModal">
-              Sign Up
-            </button> */}
           <div className="overlay">
           <p className="App-intro"> Volunteer Today, Support Tomorrow! </p>
           </div>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signupModal">
+              Sign Up
+          </button>
           
 
           {/* sign up modal */}
-          <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                <h4 class="modal-title" id="signupModalLabel">Sign up to become a volunteer today!</h4>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  
-                </div>
-                <div class="modal-body">
-
-                  <div className="form-group">
-                     <label for="usr">Name:</label>
-                     <input type="text" class="form-control" id="usr"/> 
-                  </div>
-
-                  <div className="form-group">
-                     <label for="usr">Email:</label>
-                     <input type="text" class="form-control" id="usr"/> 
-                  </div>
-
-                  <div className="form-group">
-                     <label for="usr">Password:</label>
-                     <input type="text" class="form-control" id="usr"/> 
-                  </div>
-
-                  <p><a href="#" className="links" data-toggle="modal" data-target="#signinModal" data-dismiss="modal">Already a member? Login here!</a></p>
-                  <button type="button" class="btn btn-primary" id="submitmodal" data-dismiss="modal">Submit</button>
-
-                </div>
-                {/* <div className="modal-footer">
-                  {/* <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> */}
-                  {/* <button type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
-                </div> */} 
-              </div>
-            </div>
-          </div>
+          <SignUp />
 
           {/* sign in modal */}
-          <div class="modal fade" id="signinModal" tabindex="-1" role="dialog" aria-labelledby="signinModalLabel">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                <h4 class="modal-title" id="signinModalLabel">Sign In!</h4>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  
-                </div>
-                <div class="modal-body">
+          <SignIn />
 
-                  <div className="form-group">
-                     <label for="usr">Email:</label>
-                     <input type="text" class="form-control" id="usr"/> 
-                  </div>
-
-                  <div className="form-group">
-                     <label for="usr">Password:</label>
-                     <input type="text" class="form-control" id="usr"/> 
-                  </div>
-
-                  <p><a href="#" className="links" data-toggle="modal" data-target="#signupModal" data-dismiss="modal">Not a member yet? Sign Up here!</a></p>
-                  <button type="button" class="btn btn-primary" id="submitmodal" data-dismiss="modal">Submit</button>
-                
-                </div>
-                {/* <div className="modal-footer">
-                  {/* <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> */}
-                  {/* <button type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
-                </div> */} 
-              </div>
-            </div>
-          </div>
         </header>
 
         
