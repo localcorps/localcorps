@@ -3,10 +3,10 @@
     "version": "1.0.0",
     "main": "server.js",
     "repository": {
-        "url": "git@github.com:froglander/react-local-corps.git",
+        "url": "git@github.com:localcorps/localcorps.git",
         "type": "git"
     },
-    "author": "Kristi Heredia <froglander@dukworld.net>",
+    "author": "Local Corps Team",
     "license": "MIT",
     "dependencies": {
         "express": "^4.16.2"
