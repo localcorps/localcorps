@@ -5,28 +5,28 @@ class SignIn extends Component {
 	render () {
 		return (
 
-			<div class="modal fade" id="signinModal" tabindex="-1" role="dialog" aria-labelledby="signinModalLabel">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                <h4 class="modal-title" id="signinModalLabel">Sign In!</h4>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<div className="modal fade" id="signinModal" tabindex="-1" role="dialog" aria-labelledby="signinModalLabel">
+            <div className="modal-dialog" role="document">
+              <div className="modal-content">
+                <div className="modal-header">
+                <h4 className="modal-title" id="signinModalLabel">Sign In!</h4>
+                  <button type="button" className="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                   
                 </div>
-                <div class="modal-body">
+                <div className="modal-body">
 
                   <div className="form-group">
-                     <label for="usr">Email:</label>
-                     <input type="text" class="form-control" id="usr"/> 
+                     <label htmlFor="usr">Email:</label>
+                     <input type="text" className="form-control" id="usr"/> 
                   </div>
 
                   <div className="form-group">
-                     <label for="usr">Password:</label>
-                     <input type="text" class="form-control" id="usr"/> 
+                     <label htmlFor="usr">Password:</label>
+                     <input type="text" className="form-control" id="usr"/> 
                   </div>
 
                   <p><a href="#" className="links" data-toggle="modal" data-target="#signupModal" data-dismiss="modal">Not a member yet? Sign Up here!</a></p>
-                  <button type="button" class="btn btn-primary" id="submitmodal" data-dismiss="modal">Submit</button>
+                  <button type="button" className="btn btn-primary" id="submitmodal" data-dismiss="modal">Submit</button>
                 
                 </div>
                 {/* <div className="modal-footer">
@@ -36,9 +36,6 @@ class SignIn extends Component {
               </div>
             </div>
           </div>
-
-
-
 		)
 	}
 };

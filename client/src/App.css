@@ -107,6 +107,7 @@ p {
     .btn {
       background-color: #0095a8; 
       border: #0095a8;
+      border-radius: 10px;
     }
 
     .btn:hover {
@@ -119,6 +120,12 @@ p {
 
     .btn-primary.focus, .btn-primary:focus {
       box-shadow: none;
+    }
+
+    .openModal {
+      padding: 8px;
+      margin: 10px;
+      display: inline-block;
     }
 
     /*end button styles */
