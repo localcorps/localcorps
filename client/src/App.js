@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './img/badgelogo4.png';
+import logo from './img/localcorpslogo1.png';
 import './App.css';
 
 {/* import our components */}
@@ -14,35 +14,34 @@ class App extends Component {
       <div className="App" id="home">
         <nav className="App-nav">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Local Corps</h1>
           <ul>
-            <li><a href="#" data-toggle="modal" data-target="#signinModal">Sign In</a></li> 
             <li><a href="#contact">Contact</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#home">Home</a></li>
+            {/* <li><a href="#" data-toggle="modal" data-target="#signinModal">Sign In</a></li>  */}
+            {/* <li><a href="#about">About</a></li>
+            <li><a href="#home">Home</a></li> */}
           </ul>
         </nav>
         
         <header className="App-header">
 
           <div className="overlay">
-          <p className="App-intro"> Volunteer Today, Support Tomorrow! </p>
+          <p className="App-intro">Connect. Report. Reach Out.</p>
           </div>
           
           
 
           {/* sign up modal */}
-          <button type="button" className="btn btn-primary openModal signUp" data-toggle="modal" data-target="#signupModal">
+          {/* <button type="button" className="btn btn-primary openModal signUp" data-toggle="modal" data-target="#signupModal">
               Sign Up
           </button>
           <button type="button" className="btn btn-primary openModal" data-toggle="modal" data-target="#signupModal">
               Sign In
-          </button>
+          </button> */}
           
-          <SignUp />
+          {/* <SignUp /> */}
 
           {/* sign in modal */}
-          <SignIn />
+          {/* <SignIn /> */}
 
         </header>
    
@@ -57,7 +56,8 @@ class App extends Component {
                 <h2>Contact</h2>
               </div>
               <div className="col-lg-12">
-                <p>For more information about Local Corps please send an email to <a href="mailto:localcorps@gmail.com">localcorps@gmail.com</a></p>
+                <p>For more information about Local Corps please send an email to: </p>
+                   <p><a href="mailto:localcorps@gmail.com">localcorps@gmail.com</a></p>
               </div>
             </div>
           </div>
